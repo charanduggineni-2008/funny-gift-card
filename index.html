@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Little Gift 😁</title>
+<style>
+:root{--gold:#ffe28a;--pink:#ff9fd2}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;overflow-x:hidden;
+font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#fff;
+background:radial-gradient(circle at 20% 15%,#49317e 0,transparent 30%),
+radial-gradient(circle at 80% 80%,#6d286d 0,transparent 32%),linear-gradient(145deg,#100d32,#21104b 55%,#35144c)}
+.stars,.stars:before,.stars:after{position:fixed;inset:0;content:"";pointer-events:none;
+background-image:radial-gradient(2px 2px at 20px 30px,#fff,transparent),
+radial-gradient(2px 2px at 140px 90px,#ffe9a8,transparent),
+radial-gradient(1.5px 1.5px at 230px 170px,#fff,transparent),
+radial-gradient(2px 2px at 310px 40px,#ffc5e5,transparent);
+background-size:370px 240px;opacity:.7;animation:twinkle 4s ease-in-out infinite alternate}
+.stars:before{transform:translate(90px,120px);opacity:.45;animation-delay:1s}
+.stars:after{transform:translate(180px,30px);opacity:.35;animation-delay:2s}
+@keyframes twinkle{to{opacity:.2;transform:translateY(-8px)}}
+.wrap{position:relative;width:min(92vw,620px);padding:26px 18px;text-align:center}
+.top{font-size:clamp(2.5rem,10vw,4.4rem);filter:drop-shadow(0 5px 14px #0008);animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-9px) rotate(3deg)}}
+.card{position:relative;padding:clamp(26px,6vw,48px) 22px;border:2px solid var(--gold);border-radius:28px;
+background:linear-gradient(145deg,#fff9f0,#ffe7f4);color:#32164e;
+box-shadow:0 18px 55px #0007, inset 0 0 0 7px #fff8}
+.card:before,.card:after{content:"✨";position:absolute;font-size:2rem;top:12px}
+.card:before{left:15px}.card:after{right:15px}
+h1{margin:5px 0 22px;color:#7b2e83;font-size:clamp(1.5rem,6vw,2.25rem)}
+.message{font-weight:800;font-size:clamp(1.15rem,4.4vw,1.55rem);line-height:1.65;white-space:pre-line}
+.tag{margin-top:24px;color:#7a3a83;font-weight:700}
+.float{position:fixed;font-size:clamp(2rem,6vw,3.5rem);animation:drift 7s ease-in-out infinite;opacity:.9}
+.f1{left:5%;top:16%}.f2{right:6%;top:19%;animation-delay:1s}.f3{left:8%;bottom:12%;animation-delay:2s}.f4{right:7%;bottom:10%;animation-delay:3s}
+@keyframes drift{50%{transform:translateY(-18px) rotate(12deg)}}
+footer{margin-top:18px;color:#e9d8ff;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<div class="float f1">🤣</div><div class="float f2">😎</div>
+<div class="float f3">✨</div><div class="float f4">🎁</div>
+<main class="wrap">
+  <div class="top">😁 🎁 😁</div>
+  <section class="card">
+    <h1>Surprise Gift Card!</h1>
+    <div class="message">Gift vachimdha.
+Oh raledha..
+Mari endhuku vasthadi!!
+Evado Qr pedithe Gift ela vastumdi !
+Ni pani nuvvu chusukoni pora....</div>
+    <div class="tag">🤣🤣  Just kidding!  😎😎</div>
+  </section>
+  <footer>Made with stars, emojis &amp; a little mischief ✨</footer>
+</main>
+</body>
+</html>
